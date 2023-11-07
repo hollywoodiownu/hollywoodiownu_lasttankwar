@@ -421,7 +421,7 @@ function keyUpHandler(event) {
   }
 }
 let startOverlayImage = new Image();
-startOverlayImage.src = 'https://shorturl.at/jprJS'; // Replace with the path to your start overlay image
+startOverlayImage.src = 'https://raw.githubusercontent.com/hollywoodiownu/hollywoodiownu_lasttankwar/main/image/lasttankwar_background.png';
 
 
 function drawStartOverlay() {
@@ -439,7 +439,8 @@ function drawStartOverlay() {
 
 // Define the overlay image
 let overlayImage = new Image();
-overlayImage.src = 'https://shorturl.at/eopr0'; // Replace with the path to your overlay image
+overlayImage.src = 'https://raw.githubusercontent.com/hollywoodiownu/hollywoodiownu_lasttankwar/main/image/lasttankwar.png';
+
 
 // Draw the overlay image function
 function drawOverlay() {
