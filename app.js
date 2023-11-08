@@ -1,20 +1,6 @@
-// Assuming startOverlayImage has been declared earlier, we don't use 'let' again
-startOverlayImage = new Image();
-
-// Set the source of the image
+let startOverlayImage = new Image();
 startOverlayImage.src = 'https://raw.githubusercontent.com/hollywoodiownu/hollywoodiownu_lasttankwar/main/image/lasttankwar_background.png';
 
-// Set up an event listener for when the image has finished loading
-startOverlayImage.onload = function() {
-  // The image is now fully loaded
-  // Place the rest of your code here, or call a function that starts your application
-  initializeGame(); // This is an example function call
-};
-
-// Define the initializeGame function or whatever function you want to call after the image loads
-function initializeGame() {
-  // Your game's initialization code goes here
-}
 
 
 document.addEventListener('DOMContentLoaded', function() {
