@@ -63,6 +63,21 @@ function addAliens() {
   }
 }
 
+const express = require('express');
+const app = express();
+
+// Middleware to set the "interest-cohort" header
+app.use((req, res, next) => {
+  res.setHeader('Permissions-Policy', 'interest-cohort=()');
+  next();
+});
+
+// Your other routes and application logic go here
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
+
 
 function spawnAlien() {
   // Calculate the time left in the level
